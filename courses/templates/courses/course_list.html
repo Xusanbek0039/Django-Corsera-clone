@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<!-- Page info -->
+<div class="page-info-section set-bg" data-setbg="{% static 'webuni/img/page-bg/1.jpg' %}">
+  <div class="container">
+    <div class="site-breadcrumb">
+      <a href="#">Home</a>
+      <span>Courses</span>
+    </div>
+  </div>
+</div>
+<!-- Page info end -->
+
+
+<!-- search section -->
+<section class="search-section ss-other-page">
+  <div class="container">
+    <div class="search-warp">
+      <div class="section-title text-white">
+        <h2><span>Search your course</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <!-- search form -->
+          <form class="course-search-form">
+            <input type="text" placeholder="Course">
+            <input type="text" class="last-m" placeholder="Category">
+            <button class="site-btn btn-dark">Search Couse</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- search section end -->
+
+<div class="course-warp">
+  <ul class="course-filter controls">
+    <li class="control active" data-filter="all">All Courses</li>
+  </ul>
+<div class="featured-courses">
+
+      <div class="featured-course course-item">
+        <div class="row">
+          {% for course in courses%}
+          <div class="col-lg-6 pb-4">
+            <div class="course-info">
+              <div class="course-text">
+                <h5>Category : {{course.category}}</h5>
+                <div class="fet-note">Basic Course</div>
+                <a href="{% url 'courses:course_detail' course.slug %}"><h3 class="">{{course.title|capfirst}}</h3></a>
+                <p>{{course.description}}</p>
+                <div class="students">120 Students</div>
+              </div>
+              <div class="course-author">
+                <div class="ca-pic set-bg" data-setbg="{% static 'webuni/img/authors/2.jpg' %}"></div>
+                <p>{{course.duration|capfirst}}</p>
+                <p>Created By : {{course.creator|capfirst}}, <span>Developer</span> </p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
