@@ -36,12 +36,12 @@
     <form method="POST" enctype="multipart/form-data" class="">
        {% csrf_token %}
        <fieldset class="form-group">
-           <h5><legend class="border-bottom mb-4 pt-4 display-3 text-center"> PROFILE</legend></h5>
+           <h5><legend class="border-bottom mb-4 pt-4 display-3 text-center"> Mening hisobim</legend></h5>
            {{ u_form|crispy }}
            {{ p_form|crispy }}
        </fieldset>
        <div class="form-group">
-           <button class="btn btn-outline-info" type="submit">Update</button>
+           <button class="btn btn-outline-info" type="submit">Yangilash</button>
        </div>
    </form>
 </div>
