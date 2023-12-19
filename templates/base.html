@@ -48,13 +48,13 @@
 					{% endif %}
 					<nav class="main-menu">
 						<ul>
-							<li><a href="{% url 'courses:home' %}">Home</a></li>
-							<li><a href="{% url 'courses:about' %}">About us</a></li>
-							<li><a href="{% url 'courses:course_list' %}">Courses</a></li>
-							<li><a href="blog.html">News</a></li>
-							<li><a href="{% url 'courses:contact' %}">Contact</a></li>
+							<li><a href="{% url 'courses:home' %}">Bosh saxifa</a></li>
+							<li><a href="{% url 'courses:about' %}">Biz haqimizda</a></li>
+							<li><a href="{% url 'courses:course_list' %}">Kurslar</a></li>
+							<li><a href="blog.html">Yangiliklar</a></li>
+							<li><a href="{% url 'courses:contact' %}">A'loqa</a></li>
 							{% if request.user.is_authenticated %}
-              <li><a href="{% url 'account_logout' %}">Logout</a></li>
+              <li><a href="{% url 'account_logout' %}">Chiqish</a></li>
               {% endif %}
 						</ul>
 					</nav>
