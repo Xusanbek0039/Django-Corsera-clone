@@ -102,6 +102,8 @@ label {
   transform: translateY(-80px);
 }
 
+
+
 /**
  * The CSS shown here will not be introduced in the Quickstart guide, but shows
  * how you can use CSS to style your Element's container.
@@ -115,6 +117,7 @@ label {
   box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
+  width: 100%;
 }
 
 .StripeElement--focus {
