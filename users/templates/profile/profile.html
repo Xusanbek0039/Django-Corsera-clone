@@ -45,13 +45,5 @@
        </div>
    </form>
 </div>
-{% comment %}
-<h2 class="text-center">My Created Events </h2>
-    <div class="card w-80 mb-3 ">
-    <div class="card-body">
-        <h2 class="card-title mb-5"><a class="text-capitalize" href="{% url 'events:event_detail' pk=event.pk %}">{{event.title}}</a> <span class="ml-5 badge badge-info">{{event.comments.count }} comments</span> </h2>
-    </div>
-    </div>
-</div>
-{% endcomment %}
+
 {% endblock %}
