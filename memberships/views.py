@@ -129,7 +129,7 @@ def CancelSubscription(request):
     user_sub = get_user_subscription(request)
 
     if user_sub.active is False:
-        messages.info(request, "You dont have an active membership")
+        messages.info(request, "Sizda faol aʼzolik yoʻq")
         return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
     sub = stripe.Subscription.retrieve(user_sub.stripe_subscription_id)
@@ -138,7 +138,7 @@ def CancelSubscription(request):
     user_sub.active = False
     user_sub.save()
 
-    free_membership = Membership.objects.get(membership_type='Free')
+    free_membership = Membership.objects.get(membership_type='Bepul')
     user_membership = get_user_membership(request)
     user_membership.membership = free_membership
     user_membership.save()
