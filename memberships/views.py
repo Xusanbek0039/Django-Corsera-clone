@@ -55,9 +55,9 @@ class MembershipSelectView(ListView):
 
         if user_membership.membership == selected_membership:
             if user_subscription != None:
-                messages.info(request, 'The selected membership is your current Memberships, your next payment would be due by {}'.format('get this value from stripe'))
+                messages.info(request, 'Tanlangan aʼzolik joriy aʼzoligingiz boʻlib, keyingi toʻlovingiz shu muddatgacha amalga oshiriladi {}'.format('bu qiymatni chiziqdan oling'))
                 return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
-        # PASS THE SELECTED_MEMBERSHIP INTO THE SESSION TO BE ABLE TO PAS IT INTO THE NEXT VIEWW
+
         request.session['selected_membership_type'] = selected_membership.membership_type
         # the above code is passing the value of enterprise or professional into the next veiw
         return HttpResponseRedirect(reverse('memberships:payment'))
