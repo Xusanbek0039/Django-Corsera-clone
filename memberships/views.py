@@ -52,9 +52,7 @@ class MembershipSelectView(ListView):
         if selected_membership_qs.exists():
             selected_membership = selected_membership_qs.first()
 
-        """
-        Validation to check if user memberships == selected_membership
-        """
+
         if user_membership.membership == selected_membership:
             if user_subscription != None:
                 messages.info(request, 'The selected membership is your current Memberships, your next payment would be due by {}'.format('get this value from stripe'))

@@ -17,7 +17,7 @@ class Course(models.Model):
     category = models.ForeignKey(Category,on_delete=models.CASCADE)
     description = models.TextField(max_length=400)
     created_time = models.DateTimeField(auto_now=True)
-    duration = models.CharField(max_length=10,help_text = 'please use the following formats : 1 Week or 1 Month')
+    duration = models.CharField(max_length=10,help_text = 'Iltimos, quyidagi formatlardan foydalaning: 1 hafta yoki 1 oy')
     starting_date = models.DateField(null=True)
     ending_date = models.DateField(null=True)
     allowed_memberships = models.ManyToManyField(Membership,related_name='membershipsallowed')
