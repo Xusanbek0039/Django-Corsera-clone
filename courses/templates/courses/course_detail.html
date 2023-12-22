@@ -101,14 +101,14 @@
           <p>{{course.creator}}, u haqiqatan ham iste'dodli inson va turli sertifikatlarga ega, xodim quis ligula in, eleifend rhoncus ipsum. U ishchi bo'lgunga qadar, o'yinchilarning massasi uni qo'rqmas vulputat mauris ligula sifatida qo'ydi. Aeneas yoki uy vazifasi, lekin biz uni ichishimiz kerak. Endi vulputat yuk mashinalari g'amgin. Buzilmagan va bolalar idishi. Lorem ipsum dolor sit amet, consectetur. Qayiqga g'amxo'rlik qilinmoqda va endi futbol tugadi. Lekin qonun yo'q, qonun bo'lgan xodim, eleifend CNN o'zi. U ishchi bo'lgunga qadar, o'yinchilarning massasi uni qo'rqmas vulputat mauris ligula sifatida qo'ydi. </p>
         </div>
         <div class="cl-item" id="lessons">
-          <h4 >Lessons In This Course</h4>
+          <h4 >Ushbu Kursdagi Darslar</h4>
           {% if course.lessons != None  %}
             {% for lesson in course.lessons %}
-              <h5 class="pb-3">Lesson {{lesson.position}} <a href="{{ lesson.get_absolute_url }}"><span class="pl-4">{{lesson.title}}</span></a></h5>
+              <h5 class="pb-3">Darslik {{lesson.position}} <a href="{{ lesson.get_absolute_url }}"><span class="pl-4">{{lesson.title}}</span></a></h5>
             {% endfor %}
           {% endif %}
           {% if object.lessons == '' %}
-            <h4>There are no lessons for this course Yet , check back later</h4>
+            <h4>Bu kurs uchun hali hech qanday dars yo'q, keyinroq tekshiring</h4>
           {% endif %}
 
         </div>
