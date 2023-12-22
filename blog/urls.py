@@ -7,6 +7,4 @@ urlpatterns = [
 
     path("blog/",PostListView.as_view(),name='post_list'),
     path('blog/<int:pk>/',PostDetailView.as_view(),name='post_detail'),
-
-
 ]
