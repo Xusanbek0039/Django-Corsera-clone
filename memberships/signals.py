@@ -3,11 +3,11 @@
 # from django.dispatch import receiver
 # from memberships.models import UserMembership
 # from django.conf import settings
-#
+
 # import stripe
 # stripe.api_key = settings.STRIPE_SECRET_KEY
-#
-#
+
+
 # @receiver(post_save,sender=User)
 # def create_user_membership(sender,instance,created,*args,**kwargs):
 #     if created:
@@ -17,7 +17,7 @@
 #         new_customer_id = stripe.Customer.create(email=instance.email)
 #         user_membership.stripe_customer_id = new_customer_id['id']
 #         # user_membership.save();
-#
+
 # @receiver(post_save,sender=User)
 # def save_user_membership(sender,instance,*args,**kwargs):
 #     instance.UserMembership.save()

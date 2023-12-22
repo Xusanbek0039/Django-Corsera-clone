@@ -149,8 +149,8 @@ def CancelSubscription(request):
         request, "Muvaffaqiyatli obuna bekor qilindi. Biz elektron pochta xabarini yubordik")
     # sending an email here
     send_mail(
-        'Subscription successfully cancelled',
-        'Successfully cancelled membership. We have sent an email',
+        'Obuna muvaffaqiyatli bekor qilindi',
+        'Muvaffaqiyatli obuna bekor qilindi. Biz elektron pochta xabarini yubordik',
         'itcreative0071@gmail.com',
         [user_email],
         fail_silently=False,
