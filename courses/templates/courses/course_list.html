@@ -7,8 +7,8 @@
 <div class="page-info-section set-bg" data-setbg="{% static 'webuni/img/page-bg/1.jpg' %}">
   <div class="container">
     <div class="site-breadcrumb">
-      <a href="#">Home</a>
-      <span>Courses</span>
+      <a href="#">Bosh saxifa</a>
+      <span>Kurslar</span>
     </div>
   </div>
 </div>
@@ -20,7 +20,7 @@
   <div class="container">
     <div class="search-warp">
       <div class="section-title text-white">
-        <h2><span>Search your course</span></h2>
+        <h2><span>Kursingizni qidiring</span></h2>
       </div>
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
@@ -28,7 +28,7 @@
           <form class="course-search-form">
             <input type="text" placeholder="Course">
             <input type="text" class="last-m" placeholder="Category">
-            <button class="site-btn btn-dark">Search Couse</button>
+            <button class="site-btn btn-dark">Kursn qidirish</button>
           </form>
         </div>
       </div>
@@ -39,7 +39,7 @@
 
 <div class="course-warp">
   <ul class="course-filter controls">
-    <li class="control active" data-filter="all">All Courses</li>
+    <li class="control active" data-filter="all">Barcha kurslar</li>
   </ul>
 <div class="featured-courses">
 
@@ -49,8 +49,8 @@
           <div class="col-lg-6 pb-4">
             <div class="course-info">
               <div class="course-text">
-                <h5>Category : {{course.category}}</h5>
-                <div class="fet-note">Basic Course</div>
+                <h5>Turkumlar : {{course.category}}</h5>
+                <div class="fet-note">Boshlang'ich</div>
                 <a href="{% url 'courses:course_detail' course.slug %}"><h3 class="">{{course.title|capfirst}}</h3></a>
                 <p>{{course.description}}</p>
                 <div class="students">120 Students</div>
