@@ -120,7 +120,7 @@ def UpdateTransactionRecords(request, subscription_id):
     except:
         pass
 
-    messages.info(request, 'Successfully created {} membership'.format(
+    messages.info(request, '{} aʼzoligi muvaffaqiyatli yaratildi'.format(
         selected_membership))
     return redirect(reverse('memberships:select_membership'))
 
