@@ -72,7 +72,7 @@ def PaymentView(request):
         return redirect(reverse("memberships:select_membership"))
     publishKey = settings.STRIPE_PUBLISHABLE_KEY
     if request.method == "POST":
-        # try:
+
         token = request.POST['stripeToken']
 
 
@@ -94,8 +94,6 @@ def PaymentView(request):
                                     'subscription_id': subscription.id
                                 }))
 
-        # except:
-        #     messages.info(request, "An error has occurred, investigate it in the console")
 
     context = {
         'publishKey': publishKey,
