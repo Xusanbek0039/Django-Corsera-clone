@@ -146,12 +146,12 @@ def CancelSubscription(request):
     user_email = user.email
 
     messages.info(
-        request, "Successfully cancelled membership. We have sent an email")
+        request, "Muvaffaqiyatli obuna bekor qilindi. Biz elektron pochta xabarini yubordik")
     # sending an email here
     send_mail(
         'Subscription successfully cancelled',
         'Successfully cancelled membership. We have sent an email',
-        'adebisiayomide68@gmail.com',
+        'itcreative0071@gmail.com',
         [user_email],
         fail_silently=False,
     )
