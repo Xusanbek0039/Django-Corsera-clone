@@ -75,11 +75,6 @@ def PaymentView(request):
         # try:
         token = request.POST['stripeToken']
 
-        # UPDATE FOR STRIPE API CHANGE 2018-05-21
-
-        '''
-        First we need to add the source for the customer
-        '''
 
         customer = stripe.Customer.retrieve(user_membership.stripe_customer_id)
         customer.source = token # 4242424242424242
