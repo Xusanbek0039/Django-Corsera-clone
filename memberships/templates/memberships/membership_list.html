@@ -11,7 +11,7 @@
     <div class="site-breadcrumb">
       <a href="#">Bosh saxifa</a>
       <span>Kurslar/</span>
-      <span>/</span>
+      <span>Aʼzolik/</span>
     </div>
   </div>
 </div>
@@ -24,25 +24,25 @@
     </ul>
     {% endif %}
     <div class="container">
-      <h1 class="pb-4">Membership List</h1>
+      <h1 class="pb-4">Aʼzolik roʻyxati</h1>
       <div class="row">
         {% for membership in memberships %}
         <div class="col-sm-4 col-md-4">
           <h3>{{ membership.membership_type }}</h3>
-          <h4>Price : ${{ membership.price }} <small>/month</small> </h4>
-          <h5>INCLUDED COURSES</h5>
+          <h4>Narxi : ${{ membership.price }} <small>/oyiga</small> </h4>
+          <h5>KIRILAN KURSLAR</h5>
           <ul>
             {% for course in membership.membershipsallowed.all %}
-              <li>Title : {{course.title}}</li>
+              <li>Nomi : {{course.title}}</li>
             {% endfor %}
           </ul>
-          {% if membership.membership_type != 'Free' %}
+          {% if membership.membership_type != 'Bepul' %}
           <form class="" action="{% url 'memberships:select_membership' %}" method="POST">
             {% csrf_token %}
             {% if membership.membership_type != current_membership %}
-            <button type="submit" class="btn btn-warning">Select</button>
+            <button type="submit" class="btn btn-warning">Tanlang</button>
             {% else %}
-            <small>This is Your Current Plan</small>
+            <small>Bu Sizning Joriy Rejangiz</small>
             {% endif %}
             <input type="hidden" name="membership_type" value="{{membership.membership_type}}">
           </form>
