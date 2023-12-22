@@ -59,7 +59,7 @@ class MembershipSelectView(ListView):
                 return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
         request.session['selected_membership_type'] = selected_membership.membership_type
-        # the above code is passing the value of enterprise or professional into the next veiw
+
         return HttpResponseRedirect(reverse('memberships:payment'))
 
 
