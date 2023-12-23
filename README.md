@@ -1,3 +1,5 @@
 # Udemy-Clone-Django
 
-Udemy clone sayti
+**Udemy clone sayti**
+
+**Sayt strukturasi hali tugatilinmagan!**
