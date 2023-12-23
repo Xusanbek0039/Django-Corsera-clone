@@ -32,5 +32,5 @@ python manage.py runserver
 
 **5-qadam:**
 ```
-
+http://127.0.0.1:8000/
 ```
