@@ -31,3 +31,6 @@ python manage.py runserver
 ```
 
 **5-qadam:**
+```
+
+```
