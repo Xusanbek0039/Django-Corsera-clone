@@ -26,3 +26,8 @@ python manage.py migrate
 ```
 
 **4-qadam:**
+```
+python manage.py runserver
+```
+
+**5-qadam:**
