@@ -34,3 +34,6 @@ python manage.py runserver
 ```
 http://127.0.0.1:8000/
 ```
+
+**Ko'rib chiqishingiz mumkin:**
+Iltimos agarda qandaydir taklif yoki mulohaza uchun menga murojat qiling:
