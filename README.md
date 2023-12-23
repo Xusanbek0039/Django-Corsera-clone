@@ -6,4 +6,4 @@
 
 **Sayt ustida hali ishlanmoqda**
 
-#
+# Ammo hozircha uni sinab ko'rishingiz mumkin!
