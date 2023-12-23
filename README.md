@@ -43,3 +43,14 @@ Foydalanilgan texnalogiyalar:
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 **Ko'rib chiqishingiz mumkin:**
 Iltimos agarda qandaydir taklif yoki mulohaza uchun menga murojat qiling:
+### Yordam uchun ishlab chiquvchiga murojat qiling
+
+<div align="left">
+  <a href="https://t.me/mbin_dev_0071" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="52" height="40" alt="linkedin logo"  />
+  </a>
+    <a href="https://instagram.com/husanbek_dev" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="linkedin logo"  />
+  </a>
+  
+</div>
