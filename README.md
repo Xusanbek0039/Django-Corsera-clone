@@ -10,4 +10,19 @@
 
 # Ishga tushurish uchun:
 
-1
+**1-qadam:**
+```
+git clone https://github.com/Xusanbek0071/Django-Corsera-clone.git
+```
+
+**2-qadam:**
+```
+python manage.py makemigrations
+```
+
+**3-qadam:**
+```
+python manage.py migrate
+```
+
+**4-qadam:**
