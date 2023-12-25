@@ -9,6 +9,7 @@ from django.shortcuts import render,get_object_or_404,redirect
 from memberships.models import Membership,UserMembership,Subscription
 # Create your views here.
 
+
 def get_user_membership(request):
     user_membership_qs = UserMembership.objects.filter(user=request.user)
     if user_membership_qs.exists():
