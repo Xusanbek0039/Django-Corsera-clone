@@ -7,7 +7,6 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from django.shortcuts import render,get_object_or_404,redirect
 from memberships.models import Membership,UserMembership,Subscription
-# Create your views here.
 
 
 def get_user_membership(request):
